@@ -1,0 +1,34 @@
+extends layout
+
+block content
+  header
+    h1 #{title}
+    h2 write in motion
+
+  main(role='content')
+    section
+      h3 Nodex is a dynamic text editor
+      p That let's you write the way you think — where and when you are. 
+        a(href="/manifesto") Read our manifesto
+
+    section
+      h3 Keep me updated
+      p We're building a writing tool subtle enough to capture an idea, sophisticated enough to write a book.
+
+    section
+      form(action='http://catalysm.createsend.com/t/d/s/nuhdj/', method='post')
+        p
+          label(for='fieldName') Your full name
+          br
+          input#fieldName(name='cm-name', type='text', placeholder="Charles Dickens")
+        p
+          label(for='fieldEmail') Email
+          br
+          input#fieldEmail(name='cm-nuhdj-nuhdj', type='email', required='required', placeholder="dickens@email.com", spellcheck="false")
+        p
+          input(type='submit')
+
+    section
+      h5 Created by
+      a(href="http://catalysm.co")
+        img#cly-inline(src="images/cly-inline.png")
